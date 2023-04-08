@@ -1,0 +1,46 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+$breakpoint: 992px;
+
+
+
+.footer{
+    background-color: rgb(1, 1, 11);
+    border: 1px solid black;
+    height:50rem ;
+    color: rgb(201, 175, 5);
+    @media (min-width:500px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .container{
+        .row{
+            @media (max-width:500px) {
+                gap: 1rem;
+                
+            }
+            [class^="col"]{
+                &:first-child{
+                
+                        text-decoration: none;
+                    img{
+                        height: 15rem;
+                        margin-bottom: 3rem;
+                    
+                    }
+                
+                }
+                 &:nth-child(3){
+                    a{
+                        text-decoration: none;
+                        color: rgb(201, 175, 5) ;
+
+                    }
+                }
+            }
+        }
+    }
+}

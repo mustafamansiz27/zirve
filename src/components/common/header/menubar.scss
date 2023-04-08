@@ -1,0 +1,25 @@
+@use "../../../assets/scss/variables" as v;
+@use "../../../assets/scss/mixins" as m;
+$breakpoint: 992px;
+
+
+.menubar{
+  .container{
+     
+    .navbar-links-collapse{
+        justify-content: flex-end;
+         margin-left: 40rem;
+      .navbar-links{
+        a{
+          color: v.$color4  ;
+          &:hover{
+            color: red;
+          }
+        }
+        
+        
+      }
+    
+    }
+  }
+}

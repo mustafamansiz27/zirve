@@ -1,0 +1,55 @@
+
+
+.header{
+
+.zirve-topbar{
+  display: flex;
+  justify-content: space-between;
+
+  .top-number{
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      a{
+        text-decoration: none;
+        font-size: 3rem;
+      }
+  }
+}
+
+.top-body{
+  height:30rem;
+  .row{
+    .row{
+      gap: 2.1rem;
+      .right-image{
+        figure{
+          .figcaption{
+            background-color: rgb(90, 90, 240);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.body-card{
+  // margin-top: 10rem;
+  height: 25%;
+
+.row{
+  .card-map{
+    .card{
+      img{
+        height:10rem;
+      }
+    }
+
+  }
+
+}
+}
+
+}
