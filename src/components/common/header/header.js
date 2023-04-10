@@ -24,7 +24,7 @@ const Header = () => {
               <BsFillTelephoneFill /> 0554 138 50 12{" "}
           </a>
           
-            </Col>
+            </Col>  
        </Row>
       </Container>
       </div>
