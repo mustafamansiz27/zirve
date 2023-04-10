@@ -1,33 +1,73 @@
 
 
-.header{
+.home-page{
+   
 
-.zirve-topbar{
-  display: flex;
-  justify-content: space-between;
-
-  .top-number{
-    // text-align: center;
+  .header-navbar{
+  background-color: rgba(234, 236, 239, 0.928);
+   
+  .zirve-topbar{
     display: flex;
-    justify-content: center;
-    align-items: center;
-      a{
-        text-decoration: none;
-        font-size: 3rem;
+    justify-content: space-between;
+    
+  
+    .top-number{
+      // text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+        a{
+          color: rgb(69, 69, 248);
+          text-decoration: none;
+          font-size: 3rem;
+          @media (max-width:768px) {
+            font-size: 2rem;
+            margin-right: 4rem;
       }
+        }
+
+       
+    }
+    
   }
-}
+
+ 
+  }
+  .navbar-streach{
+    background-image: linear-gradient(180deg,rgb(95, 95, 241), gray   );
+    font-size: 1rem;
+    
+    .container{
+      a{
+        margin-left: 1rem;
+        color: white;
+        cursor: pointer;
+        &:hover{
+          color: rgb(237, 229, 4);
+        }
+      }
+    }
+  }
+
+
 
 .top-body{
-  height:30rem;
+  // height:80vh;
   .row{
     .row{
+
       gap: 2.1rem;
       .right-image{
+        &:hover{
+          transform: scale(1.1);
+        }
+        
         figure{
           .figcaption{
-            background-color: rgb(90, 90, 240);
+            background-color:rgb(69, 69, 248);
             text-align: center;
+            color: white;
           }
         }
       }
@@ -44,6 +84,9 @@
     .card{
       img{
         height:10rem;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -51,5 +94,67 @@
 
 }
 }
+
+  
+.footer{
+  background-color: rgb(149, 140, 140);
+  padding: 10rem;
+  color: white;
+  margin-top: 2rem;
+  
+  .row{
+    [class^="col"]{
+
+      h2{
+        border-bottom: 1px dotted rgb(102, 101, 101) ;
+      }
+      
+      p{
+        font-size: 1rem;
+        font-weight: 500;
+        
+        &:nth-child(3){
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+       
+       
+      }
+
+      h2{
+        color: rgb(201, 205, 6);
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+          color: rgb(119, 121, 5);
+          transform: scale(1.1);
+        }
+        
+      }
+    }
+    a{
+      display: inline;
+      text-align: end;
+      cursor: none;
+      &:hover{
+        cursor: pointer;
+      }
+
+
+        .whatsUp{
+          
+          &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            
+          }
+        }
+      
+    }
+  }
+}
+
 
 }
