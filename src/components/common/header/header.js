@@ -14,10 +14,11 @@ const Header = () => {
   return (
     <div className="home-page">
       <div className="header-navbar">
-        <div>
-      <Container>
+        <div className="gradiant">
+      <Container className="gradiant-container">
       <Row className="zirve-topbar">
         <Col> <a href="">  <img src={logo} alt="prefabrik ev" /> </a></Col>
+       
         <Col className="top-number">
           <a href="tel:05541385012">
               {" "}
