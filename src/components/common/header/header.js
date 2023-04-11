@@ -48,8 +48,16 @@ const Header = () => {
 
       <Container className="top-body">
         <Row className="mt-5 ">
-          <Col lg={9}>
-            <Slider />
+          <Col lg={9} className="arrow-col-parent" >
+            <Slider/>
+             <Row className="aroow">
+              <Col className="arrow-col">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+              </Col> 
+             </Row>
+  
           </Col>
 
           <Col lg={3}>
