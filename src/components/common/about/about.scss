@@ -5,13 +5,40 @@
 
 
 
-    .header-navbar{
-        background-color: rgba(234, 236, 239, 0.928);
-         
+  .header-navbar{
+    background-color: rgba(234, 236, 239, 0.928);
+  
+    .gradiant{
+      background-image: linear-gradient(to bottom, #e5a2a2cd, #fadfdfbe), url("../../../assets/img/product/0aa0ee14-5e8c-4244-a15c-266c8e5e33a0.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      // background-image: linear-gradient(180deg,  rgb(98, 98, 103),  rgb(149, 149, 191) );
+    
+      .gradiant-container{
         .zirve-topbar{
           display: flex;
           justify-content: space-between;
-         
+          position: relative;
+          // z-index: 99;
+          [class^="col"]{
+            &:nth-child(1){
+              z-index: 99;
+            }
+           
+          
+          }
+          // &::after{
+          //   content: "";
+          //   position: absolute;
+          //   top: 0;
+          //   right: 0;
+          //   bottom: 0;
+          //   left: 0;
+          //   background-image: linear-gradient(180deg,  rgb(98, 98, 103),  rgb(149, 149, 191) );
+          //   z-index: 0;
+          // }
+      
           
         
           .top-number{
@@ -21,7 +48,7 @@
             align-items: center;
             z-index: 99;
               a{
-                color: rgb(69, 69, 248);
+                color: rgb(18, 18, 20);
                 text-decoration: none;
                 font-size: 3rem;
                 @media (max-width:768px) {
@@ -34,25 +61,31 @@
           }
           
         }
-
+  
+       }
+  
+    }
+     
+    
+  
+   
+    }
+    .navbar-streach{
+      background-image: linear-gradient(180deg,rgb(95, 95, 241), #e5a2a2cd   );
+      font-size: 1.2rem;
       
-       
-        }
-        .navbar-streach{
-          background-color: rgb(69, 69, 248);
-          font-size: 1rem;
-          .container{
-            a{
-              margin-left: 1rem;
-              color: white;
-              cursor: pointer;
-              &:hover{
-                color: rgb(237, 229, 4);
-              }
-            }
+      .container{
+        a{
+          margin-left: 1rem;
+          color: white;
+          cursor: pointer;
+          &:hover{
+            color: rgb(237, 229, 4);
           }
         }
-
+      }
+    }
+  
         .about-body{
             .row{
                 [class^="col"]{
@@ -81,47 +114,72 @@
         }
     
         .footer{
-            background-color: rgb(149, 140, 140);
-            padding: 10rem;
-            color: white;
-            margin-top: 2rem;
-            
-            .row{
-              [class^="col"]{
+          background-image: linear-gradient(to bottom, #e5a2a2cd, #fadfdfbe), url("../../../assets/img/product/isteğe-göre-tekkatlı-ev.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        
+          // background-color: rgb(149, 140, 140);
+          padding: 10rem;
+          color: rgb(225, 11, 236);
+          margin-top: 2rem;
           
-                h2{
-                  border-bottom: 1px dotted rgb(102, 101, 101) ;
+          .row{
+            [class^="col"]{
+        
+              h2{
+                border-bottom: 1px dotted rgb(102, 101, 101) ;
+              }
+              
+              p{
+                font-size: 1rem;
+                font-weight: 500;
+                
+                &:nth-child(3){
+                  a{
+                    text-decoration: none;
+                    color: rgb(225, 11, 236);
+                  }
+                }
+               
+               
+              }
+        
+              h2{
+                color: rgb(13, 13, 11);
+                font-weight: 800;
+                cursor: pointer;
+                &:hover{
+                  color: rgb(119, 121, 5);
+                  transform: scale(1.1);
                 }
                 
-                p{
-                  font-size: 1rem;
-                  font-weight: 500;
-                  
-                  &:nth-child(3){
-                    a{
-                      text-decoration: none;
-                      color: white;
-                    }
-                  }
-                 
-                 
-                }
-          
-                h2{
-                  color: rgb(201, 205, 6);
-                  font-weight: 700;
-                  cursor: pointer;
-                  &:hover{
-                    color: rgb(119, 121, 5);
-                    transform: scale(1.1);
-                  }
-                  
-                }
-              }
-              a{
-                display: inline;
-                text-align: end;
               }
             }
+            a{
+              display: inline;
+              text-align: end;
+              cursor: none;
+              &:hover{
+                cursor: pointer;
+              }
+        
+        
+                .whatsUp{
+                  background-color: rgb(146, 191, 79);
+                  border-radius: 50%;
+                
+                  
+                  
+                  &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                    border: 2px solid  rgb(69, 111, 6);
+                    
+                  }
+                }
+              
+            }
           }
+        }
         }

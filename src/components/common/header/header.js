@@ -57,7 +57,7 @@ const Header = () => {
                  <span></span>
               </Col> 
              </Row>
-               <a href="">ürünlerimiz</a>
+               
           </Col>
 
           <Col lg={3}>
@@ -68,10 +68,10 @@ const Header = () => {
                   {" "}
                   <img
                     className="img-fluid"
-                    src={require(`../../../assets/img/product/03819ee6-44ea-4a31-9601-a7cf58127cca.jpg`)}
+                    src={require(`../../../assets/img/product/d34821d5-3ee8-4246-9bd4-55105122df26.jpg`)}
                     alt=""
                   />{" "}
-                  <figcaption className="figcaption">ilk resim</figcaption>{" "}
+                  <figcaption className="figcaption">Prefabrik Yapı</figcaption>{" "}
                 </figure>{" "}
               </Col>
               <Col lg={12} className="right-image">
@@ -80,10 +80,10 @@ const Header = () => {
                   {" "}
                   <img
                     className="img-fluid"
-                    src={require(`../../../assets/img/product/03819ee6-44ea-4a31-9601-a7cf58127cca.jpg`)}
+                    src={require(`../../../assets/img/product/isteğe-göre-tekkatlı-ev.jpg`)}
                     alt=""
                   />{" "}
-                  <figcaption className="figcaption">ikinci resim</figcaption>{" "}
+                  <figcaption className="figcaption">Tek Katlı Prefabrik evler</figcaption>{" "}
                 </figure>
               </Col>
               <Col lg={12} className="right-image">
@@ -95,7 +95,7 @@ const Header = () => {
                     src={require(`../../../assets/img/product/03819ee6-44ea-4a31-9601-a7cf58127cca.jpg`)}
                     alt=""
                   />{" "}
-                  <figcaption className="figcaption">üçüncü resim</figcaption>{" "}
+                  <figcaption className="figcaption">Doğa İle İç İçe  </figcaption>{" "}
                 </figure>
               </Col>
             </Row>
