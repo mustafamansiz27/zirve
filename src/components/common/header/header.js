@@ -30,7 +30,7 @@ const Header = () => {
       </Container>
       </div>
 
-        <Navbar  className="navbar-streach fixed-top" expand="lg" >
+        <Navbar  className="navbar-streach fixed-top" expand="lg"  >
           <Container>
             <Navbar.Brand href="#home">Hayalleriniz Burada</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
