@@ -95,20 +95,25 @@
       
         position: relative;
         .aroow{
+          position: relative;
           
           // margin-top: 3rem;
           .arrow-col{
             display: flex;
             justify-content: center;
+            transform: translateY(-200%);
+            // margin-top: 3rem;
+            z-index: 99;
+            position: absolute;
            
             span{
               position: absolute;
               display: inline-block;
               width: 2rem;
               height: 2rem;
-              border-top: 2px solid black;
-              border-left: 2px solid black;
-              transform: rotate(45deg) translate(-300%, -300% ) ;             
+              border-bottom: 4px solid black;
+              border-right: 4px solid black;
+              transform: rotate(45deg)  translate(100%, 100% ) ;             
               margin: -1rem;
               animation: arrows-animate 2s infinite;
               z-index: 99;
@@ -190,7 +195,7 @@
 
   // background-color: rgb(149, 140, 140);
   padding: 10rem;
-  color: white;
+  color: rgb(225, 11, 236);
   margin-top: 2rem;
   
   .row{
@@ -207,7 +212,7 @@
         &:nth-child(3){
           a{
             text-decoration: none;
-            color: white;
+            color: rgb(225, 11, 236);
           }
         }
        
