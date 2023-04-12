@@ -46,7 +46,7 @@ const Contact = () => {
               <Nav.Link as={Link} to="/contact">
                 İletişim
               </Nav.Link>
-              <Nav.Link href="#link">Galeri</Nav.Link>
+              <Nav.Link as={Link} to="/konteyner" >konteyner</Nav.Link>
               <Nav.Link href="#link">Yapı Malzemeleri</Nav.Link>
             </Navbar.Collapse>
           </Container>
@@ -55,7 +55,7 @@ const Contact = () => {
 
       <Container className="contact-inform">
         <Row>
-          <Col lg={6} className="mt-5 contact-left ">
+          <Col lg={3} className="mt-5 contact-left ">
             {/* <h2>İLETİŞİM BİLGİLERİ</h2> */}
             <img
               src={require(`../../../assets/img/product/14988b91-153b-4e80-a6f1-545d1633fc61.jpg`) }
@@ -66,7 +66,7 @@ const Contact = () => {
             <p>info@zirveprefabrilkonteyner.com</p>
             <a href="tel:0554 138 50 12"><p><BsFillTelephoneFill /> 0554 138 50 12</p></a> 
           </Col>
-          <Col lg={6} className="contact-right">
+          <Col lg={3} className="contact-right">
           
             <Form className="mt-5">
               

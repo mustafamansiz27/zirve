@@ -1,19 +1,17 @@
-import React from "react";
-import Menubar from "./menubar";
-import Slider from "./slider";
-import CardsData from "./slides.json";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa";
-import { GrMail } from "react-icons/gr";
+import React from 'react'
+import "./konteyner.scss"
 import logo from "../../../assets/img/product/2.png";
-import { Card, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import "./header.scss";
-import { Link } from "react-router-dom";
+import { Card, Col, Container, Nav, Navbar, Row } from 'react-bootstrap'
+import CardsData from "../header/slides.json";
+import { Link } from 'react-router-dom';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { FaWhatsapp } from 'react-icons/fa';
+import { GrMail } from 'react-icons/gr';
 
-const Header = () => {
+const Konteyner = () => {
   return (
-    <div className="home-page">
-      <div className="header-navbar">
+    <div className='konteyner-page'>
+         <div className="header-navbar">
         <div className="gradiant">
       <Container className="gradiant-container">
       <Row className="zirve-topbar">
@@ -24,7 +22,6 @@ const Header = () => {
               {" "}
               <BsFillTelephoneFill /> 0554 138 50 12{" "}
           </a>
-          
           
             </Col>  
        </Row>
@@ -47,67 +44,11 @@ const Header = () => {
       
       </div>
 
-      <Container className="top-body">
-        <Row className="mt-5 ">
-          <Col lg={9} className="arrow-col-parent" >
-            <Slider/>
-             <Row className="aroow">
-              <Col className="arrow-col">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-              </Col> 
-             </Row>
-               
-          </Col>
-
-          <Col lg={3}>
-            <Row>
-              <Col lg={12} className="right-image">
-                {" "}
-                <figure>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src={require(`../../../assets/img/product/d34821d5-3ee8-4246-9bd4-55105122df26.jpg`)}
-                    alt=""
-                  />{" "}
-                  <figcaption className="figcaption">Prefabrik Yapı</figcaption>{" "}
-                </figure>{" "}
-              </Col>
-              <Col lg={12} className="right-image">
-                {" "}
-                <figure>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src={require(`../../../assets/img/product/isteğe-göre-tekkatlı-ev.jpg`)}
-                    alt=""
-                  />{" "}
-                  <figcaption className="figcaption">Tek Katlı Prefabrik evler</figcaption>{" "}
-                </figure>
-              </Col>
-              <Col lg={12} className="right-image">
-                {" "}
-                <figure>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src={require(`../../../assets/img/product/03819ee6-44ea-4a31-9601-a7cf58127cca.jpg`)}
-                    alt=""
-                  />{" "}
-                  <figcaption className="figcaption">Doğa İle İç İçe  </figcaption>{" "}
-                </figure>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-
-        <Container className="mt-5 body-card">
+      <Container className="mt-5 konteyner-card">
         <Row > 
           {CardsData.map((card, i) => (
             
-              <Col key={i} lg={3} className="card-map">
+              <Col key={i} lg={3} className="konteyner-map">
               <Card  >
                 <Card.Img variant="top" src={require(`../../../assets/img/slider/${card.image}`) } className="img-fluid" />
                 <Card.Body>
@@ -122,10 +63,10 @@ const Header = () => {
           ))}
            </Row>
         </Container>
-      </Container>
-      
-      
-        <div className="footer">
+
+
+
+      <div className="footer">
           <Row>
             <Col lg={3}>
              <h2> KURUMSAL</h2>
@@ -158,10 +99,10 @@ const Header = () => {
 
           </Row>
         </div>
+
      
-
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Konteyner

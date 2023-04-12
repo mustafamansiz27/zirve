@@ -36,7 +36,7 @@ const About = () => {
               <Nav.Link as={Link} to="/">Ana Sayfa</Nav.Link>
               <Nav.Link as={Link} to="/about">Hakkımızda</Nav.Link>
               <Nav.Link as={Link} to="/contact" >İletişim</Nav.Link>
-              <Nav.Link href="#link">Galeri</Nav.Link>
+              <Nav.Link as={Link} to="/konteyner" >konteyner</Nav.Link>
               <Nav.Link href="#link">Yapı Malzemeleri</Nav.Link>
             </Navbar.Collapse>
           </Container>

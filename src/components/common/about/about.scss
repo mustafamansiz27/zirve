@@ -89,13 +89,26 @@
         .about-body{
             .row{
                 [class^="col"]{
+                  &:nth-child(2){
+                    img{
+                      height: 23rem;
+                      width: 25rem;
+                      border-radius: 50%;
+                      box-shadow:  .5rem .5rem 2rem gray ;
+                    }
+                  
+                  }
                     &:nth-child(3){
                         img{
-                            width: 40rem;
+                          height: 23rem;
+                          width: 25rem;
+                          border-radius: 50%;
+                          box-shadow:  .5rem .5rem 2rem gray ;
                         }
 
                     }
                     &:nth-child(4){
+                    
                         p{
                             font-size: 1.5rem;
                     
@@ -121,7 +134,7 @@
         
           // background-color: rgb(149, 140, 140);
           padding: 10rem;
-          color: rgb(225, 11, 236);
+          color: rgb(48, 1, 50);
           margin-top: 2rem;
           
           .row{

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from '../pages/home-page'
 import ContactPage from '../pages/contact-page'
 import AboutPage from '../pages/about-page'
+import KonteynerPage from '../pages/konteyner-page'
 
 const CustomRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const CustomRoutes = () => {
             <Route index element={<HomePage/>} />
             <Route path='contact' element={<ContactPage/>} />
             <Route path='about' element={<AboutPage/>} />
+            <Route path='konteyner' element={<KonteynerPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

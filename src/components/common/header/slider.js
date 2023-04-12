@@ -18,9 +18,11 @@ import slides from "./slides.json"
 // import required modules
 import { EffectFade, Navigation, Pagination,Autoplay } from "swiper";
 
+
 const Slider = () => {
   return (
     <>
+    
     <Swiper
      autoplay={{
       delay: 3000,
@@ -44,18 +46,19 @@ const Slider = () => {
         })
       } */}
       <SwiperSlide className='sd'>
-        <img src={require(`../../../assets/img/product/slider.jpg`)} />
+        <img className='img-fluid' src={require(`../../../assets/img/product/slider.jpg`)} />
       </SwiperSlide>
       
       <SwiperSlide className='sd'>
-        <img src={require(`../../../assets/img/slider/sliders6.jpg`)} />
+        <img className='img-fluid'  src={require(`../../../assets/img/slider/sliders6.jpg`)} />
       </SwiperSlide>
       
       <SwiperSlide className='sd'>
-        <img src={require(`../../../assets/img/slider/sliders6.jpg`)} />
+        <img className='img-fluid'  src={require(`../../../assets/img/product/eed36386-2056-43f7-9ea2-e127601d8170.jpg`)} />
       </SwiperSlide>
      
     </Swiper>
+   
     </>
 );
   
